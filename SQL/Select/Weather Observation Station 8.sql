@@ -20,3 +20,11 @@ Write a query to print the list of CITY that starts with vowels and ends at vowe
 
 SELECT DISTINCT CITY FROM STATION WHERE REGEXP_LIKE (UPPER(city),'^[AEIOU].*[AEIOU]$');
 	  
+/* or you can use this for mysql
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY REGEXP '^[AEIOU].*[AEIOU]$';
+
+/*
+
